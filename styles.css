@@ -1,0 +1,47 @@
+/* CSS Doc */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body { color: #444; font-size: 10px; font-family: 'Lato', sans-serif; font-weight: 400; }
+header { background: url(/assets/background.jpg) no-repeat center center; background-size: cover; padding: 12% 0 15% 0; }
+header h1 { margin: auto; width: 20%; position: relative; }
+header h1 a { text-indent: -999999em; display: block; position: relative; width: 100%; }
+header h1 a span { position: absolute; display: block; top: 0; left: 0; width: 100%; height: 0; padding: 50% 0 0 0 ; background: url(/assets/logo.svg) no-repeat; background-size: contain;}
+.highlight { background: #f3f3f3; }
+
+section { padding: 8em 0;}
+
+h2 { text-transform: uppercase; font-size: 4.3em; font-weight: 400; line-height: 1.8em; }
+h3 { font-size: 3.4em;  font-weight: 400; }
+legend { text-transform: uppercase; font-size: 2.8em; font-weight: 400; line-height: 1.8em; }
+p { font-size: 1.6em; font-weight: 300; line-height: 1.8em; }
+
+.error { color: #f00; border-color: #f00;}
+label { font-size: 1.6em;}
+input.btn { text-transform: uppercase; }
+
+.team-photo { border-bottom: 2px solid #4f4c46;}
+.team-name { font-size: 3em; font-weight: 700; line-height: 1.5em; padding-top: 0.4em; }
+.team-title { font-size: 3.2em; font-weight: 300; line-height: 1.2em; }
+
+footer { background: #2f3f3f; padding: 1em 0 0.3em 0; text-align: center;}
+footer p { font-weight: 300; color: #b9b9b9; }
+footer .separator { display: inline-block; padding: 0 10px; }
+
+@keyframes spin{
+	0% { transform: rotate(0deg); }
+	40% { transform: rotate(-17deg); }
+	70% { transform: rotate(1100deg); }
+	85% { transform: rotate(1100deg); }
+	100% { transform: rotate(1080deg); }
+}
+
+img.spin{
+	width: 30px;
+	margin-top: -5px;
+	animation: spin 3s ease infinite;
+	-webkit-animation: spin 3s ease infinite;
+	transform-origin: 50% 50%;
+	animation-fill-mode: both;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-fill-mode: both;
+}

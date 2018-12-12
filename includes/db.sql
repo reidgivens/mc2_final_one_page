@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS messages;
+DROP TABLE IF EXISTS people;
+
+CREATE TABLE people {
+  id SERIAL NOT NULL PRIMARY KEY,
+  name VARCHAR NOT NULL,
+	email VARCHAR NOT NULL UNIQUE,
+	telephone VARCHAR,
+}
+
+CREATE TABLE messages {
+  id SERIAL NOT NULL PRIMARY KEY,
+	people_id INT NOT NULL REFERENCES people(id) ON DELETE CASCADE,
+	message TEXT NOT NULL,
+}
+
+CREATE INDEX messages_people_id ON messages(people_id);
